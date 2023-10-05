@@ -14,7 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <div className="wrapper">
+            <div className="container">{children}</div>
+          </div>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
